@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas
+
+            cm, mm in, px, pt, pc  -> Não são recomendados(Menos o px)
+
+            Medadas Relativas
+             
+            em, ex, rem, vw, vh, %
+             
+            16px geralmente = 1em
+
+            */
+            font-size: 1em ;  
+
+            /*Use preferencialmente em e px */
+
+
+            /*Peso da fonte: */
+            font-weight:bold ;    
+            font-style: italic;
+            /*Pesos das fontes: lighter, normal, bold e bolder; Algumas fontes possuem numeros tbm que vão do lighter ao bolder*/   
+            
+            text-decoration: underline; /*Sublinhado */
+
+        }
+
+        h1{
+            /*font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style:italic;*/
+            /*Shorthand font
+            
+            em uma Única função, consigo fazer tudo isso, ótimo para mostrar conhecimento, a ordem:
+            
+            - font family -> font weight -> font size -> font family
+            
+            */
+            font: italic bolder 3em Arial, Helvetica, sans-serif  /*Bem otimizado*/
+        }
+
+        h2{
+            /*Outro exemplo de shorthand:*/
+            font: bold 2em Arial;  
+            /*Não precisa ser totalmente completo, nesse caso eu "pulei o italico" que coloquei no exemplo do h1*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quia ipsum expedita voluptates atque maxime earum praesentium! Itaque esse similique alias, commodi, distinctio maiores natus voluptatem porro repellat inventore sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut facere quasi aperiam iure sit vero! At delectus placeat alias consequuntur, distinctio beatae laudantium unde magni minima neque natus nisi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit alias quae aspernatur. Libero neque, dolorum totam amet illo incidunt ut porro beatae deleniti saepe vitae exercitationem consequuntur earum fugit.</p>
+    <h2>Subtítulo do exercicio</h2> 
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, dolores tenetur! Beatae, sed repellendus deleniti repudiandae quos totam dolorum incidunt quam fugit officia, explicabo natus tempora facere excepturi similique voluptates.</p>
+</body>
+</html>

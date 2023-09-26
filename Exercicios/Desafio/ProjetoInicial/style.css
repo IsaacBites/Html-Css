@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #FB3640;
+    --cor1: #000000;
+    --cor2: #F5F3BB;   /*Váriaveis para usar na cor*/
+    --cor3: #2D728F;
+    --cor4: #36C9C6;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;  /*Varivies para usar as fontes*/
+    --fonte-destaque: 'Orbitron', sans-serif;
+    --fonte-android: 'Android', sans-serif;
+}
+*{
+    margin: 0px;      /*Configirações globais, selecionam todos os itens do site*/
+    padding: 0px;
+}
+body{
+    background-color: var(--cor4);
+    font-family: var(--fonte-android);
+}
+main p{
+    margin: 15px 0px 150x 0px;
+    text-align: justify;
+}
+header{
+    background-image: -webkit-linear-gradient(90deg, var(--cor3), var(--cor4));
+    min-width: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > p{
+    color: var(--cor1);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+}
+nav{
+    background-color: #2D728F;
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.342);
+}
+nav > a:hover{
+    color: #FB3640;
+    transition-duration: 0.5s;
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+main{
+    background-color: var(--cor2);
+    /*Respondividade*/
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 3px 11px black;
+    border-radius: 0px 0px 10px 10px;
+}
+header > h1{
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 3em;
+}
+main h1{
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+}
+main h2{
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, gray, transparent );
+    text-indent: 8px;
+    font-weight: normal;
+}
+main p{
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+main strong{
+    color: var(--cor0);
+    font-weight: bolder;
+
+}
+main a{
+    text-decoration: none;
+    background-color: #2D728F;
+    color: white;
+    padding: 2px;
+}
+main a:hover{
+    color: var(--cor0);
+    text-decoration: underline;
+}
+main  img{
+    /*Respondividade*/
+    width: 100%;
+}
+main > img.pequena{
+    max-width: 300px;
+    margin: auto;
+    display: block; /*Serve para centralizar imagens pois por padrão elas não são blocos, logo o margin auto não funciona com perfeição*/
+}
+div.video{
+    background-color: #2D728F;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: #2D728F;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.397);
+}
+aside > h3{
+    color: #F5F3BB;
+    padding: 10px;
+
+}
+aside > ul{
+    list-style-position: inside;
+    list-style-type: '\27A1\00A0\00A0';   /*00A0 é um espaço*/
+    columns: 2;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{       /*Sumindo com o p que é fiho da div*/
+            display: none;
+        }
+        div:hover > p{  /*Quando passar o mouse por cima, o p que é filho da div vai aparecer*/
+            display: block;
+            color: brown;
+            background-color: aqua;
+            width: 300px;
+        }
+        div:hover{
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div> <br>
+
+
+    <!-- : é uma pseudoclasse, como o exemplo do Hover 
+    
+    O sinal de > é como se o paragrafo fosse filah da div, logo, o CSS só vai mexer em paragrafos que são filhos de Div, ignorando os outros que não são
+    
+    
+    -->
+
+    <p><a href="pseudoclasses.html">Voltar</a></p>
+
+
+
+</body>
+</html>

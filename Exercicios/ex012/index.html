@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+
+    <!--Videos, cuidado com direitos autorais-->
+    <!--Melhores formatos de áudios: MP3, M4V, WEB E OGV-->
+
+    <!--Editor de som gratuito: HandBrake-->
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no eu próprio servidor</p>
+
+    <video src="midia/meu-video.mp4" width="500px" controls poster="imagens/pexels-pixabay-2150.jpg" loop></video>
+
+    <!--Dessa forma encima funciona, entretanto algumas extenções não funcionam em determinados navegadores, logo o ideal é fazer vários sources para que diferentes formatos sejam testados, se um não funcionar, o outro vai-->
+
+    <!--Assim:-->
+
+    <video width="500px" poster="imagens/pexels-pixabay-2150.jpg" controls loop>
+
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+
+    </video>
+
+    <!--Controls serve para iniciar o video-->
+    <!--Poster serve para criar um tumb para o video-->
+    <!--Loop serve para o video sempre rodar, criando um loop-->
+
+    <!--Videos hospedados no seu próprio servidor podem ficar consumir muitos dados e assim gerando muitos custos para o seu cliente-->
+
+    <h1>Inserindo video do Yt</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4apU9P8wtxE?si=5nsznaMcLUiq2iZC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--Video direto do Yt-->
+    <!--Ir no video -> clicar em compartilhar -> Clicar em "Incorporar" -> copiar o código e colar no vsCode-->
+
+    <!--Nesse caso, o seu vídeo no não vai consumir banda, e sim vai consumir banda do yt, assim, economizando hospedagem para o seu cliente-->
+
+    
+</body>
+</html>
