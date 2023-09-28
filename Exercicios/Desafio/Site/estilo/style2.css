@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#sla {
+    width: 200px; /* Tamanho do círculo */
+    height: 200px; /* Tamanho do círculo */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /*ocupar 100 da tela verticalmente*/
+}
