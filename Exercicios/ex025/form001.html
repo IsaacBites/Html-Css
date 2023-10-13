@@ -11,8 +11,13 @@
     </style>
 </head>
 <body>
+
+    <!-- GET não pode enviar mais de 3000 letras aproximadamente, assim como dados sensíveis e fotos ou videos-->
+
+    <!-- Arquivos sensíveis é necessário usar HTTPS -->
+
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="GET" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
